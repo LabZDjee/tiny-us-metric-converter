@@ -4,11 +4,11 @@ This is a simple pure and compact [HTML](https://www.wikiwand.com/en/HTML)/[CSS]
 
 Contents is a simple converter from some [US customary units](https://www.wikiwand.com/en/United_States_customary_units) to the [metric system](https://www.wikiwand.com/en/Metric_system)
 
-I intended to compact the HTML file quite much. I noticed many spaces can be removed in DOM element attributes, style properties, remove the trailing semi-column in style, use Linux line endings... As a result, file size is less than 1,500 bytes which is compressed under 1,200 bytes by **itty.bitty**
+I intended to compact the HTML file quite much. I noticed many spaces can be removed in DOM element attributes, style properties, remove trailing semi-columns in style, use Linux line endings... As a result, file size is less than 1,500 bytes which is compressed under 1,200 bytes by **itty.bitty**
 
 Style is based on [flexbox](https://www.wikiwand.com/en/CSS_flex-box_layout) layout, a little bit too large on wide screens. Using [media queries](https://www.wikiwand.com/en/Media_queries) to address this nicely would have inflated code too much
 
-I noticed my script was not compressed correctly by **itty.bitty** when I aggressively removed semi column `;` terminators. I put quite all semi-columns back
+I noticed my script was not compressed correctly by **itty.bitty** when I aggressively removed semi column `;` terminators in script. I put quite all semi-columns back
 
 I tried on mobile thru the generated [QR-code](https://www.wikiwand.com/en/QR_code). I noticed [unicode](https://www.wikiwand.com/en/Unicode) (encode in [UTF-8](https://www.wikiwand.com/en/UTF-8)) does not work well with HTML dropdown on Android (at least on my version 6)
 
