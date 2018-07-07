@@ -12,7 +12,7 @@ I noticed my script was not compressed correctly by **itty.bitty** when I aggres
 
 I tried on mobile thru the generated [QR-code](https://www.wikiwand.com/en/QR_code). I noticed [unicode](https://www.wikiwand.com/en/Unicode) (encode in [UTF-8](https://www.wikiwand.com/en/UTF-8)) does not work well with HTML dropdown on Android (at least on my version 6)
 
-## Quick introduction to **itty.bitty**
+## Quick introduction to *itty.bitty*
 
 (*grabbed and adapted from [here](http://how.bitty.site/)*)
 
@@ -28,3 +28,10 @@ This compressed data is [base64](https://www.wikiwand.com/en/Base64) encoded, wh
 The links that are generated from this process are complete and substantial. While most sites/apps support about 2,000 bytes, some can handle more
 
 Once the link is sent and opened, it loads **itty.bitty.site** to reverse the process, which is done completely on device. Data are extracted, inflated, and then shown in the web browser
+
+## Where does *itty-bitty* come from?
+
+In English, *itty-bitty* [ĭt′ē-bĭt′ē], sometimes written *itsy-bitsy*, means very small, probably an alteration of *little bit*. The technique used here is available on GitHub at: https://github.com/alcor/itty-bitty
+
+It has been developed by **Nicholas Jitkoff**  and published in July 2018. Nicholas, former lead designer for Google’s Material Design team for 10 years, was appointed VP of design at Dropbox in February 2017
+
