@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Converter</title>
+ <meta charset="utf-8">
+ <meta name="viewport"content="width=device-width, initial-scale=1.0">
+ <style>
+  *{border-radius:5px;text-align:center;font:caption;color:brown}
+  *:focus{outline:none}
+  .f{width:70%;margin:auto;background-color:lightgray;
+     display:flex;flex-flow:column;align-items:center;justify-content:center}
+  .b{border:solid blue;background-color:white;width:75%;margin:10px;border-radius:5px;}
+ </style>
+</head>
+<body>
+<div class="f">
+ <p>Tiny US→metric Converter</p>
+ <select id="c"onchange="C()"class="b">
+  <option value="m">mi.→km</option> 
+  <option value="f">fl. oz.→dl</option> 
+  <option value="z">oz.→g</option> 
+  <option value="i">in.→cm</option>
+  <option value="o">ft.→m</option>
+  <option value="t">F→C</option>
+  <option value="g">gal.→l</option>
+  <option value="c">mil./gal.→l/100km</option>
+ </select>
+ <input type="text"id="i"oninput="C()"class="b"value="26.219">
+ <div id="r"class="b"></div><br>
+</div>
+</body>
+<script>
+function $(i){return document.getElementById(i);}
+function C(){
+var x=parseFloat($("i").value),m=1.609344,g=3.785411784;
+switch($("c").value){
+case'm':x*=m;break;
+case'f':x*=.295735296875;break;
+case'z':x/=.035274;break;
+case't':x=(x-32)/1.8;break;
+case'i':x*=2.54;break;
+case'o':x*=.3048;break;
+case'g':x*=g;break;
+case'c':x=100*g/x/m;}
+var a=x<0.?-x:x;
+if(Math.floor(a)!=a)
+ x=x.toFixed(a<10.?6:3);
+$("r").innerHTML=x;}
+C();
+</script>
+</html>
